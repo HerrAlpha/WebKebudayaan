@@ -331,7 +331,18 @@ Pre-loader Style
   border-radius: 50%;
 }
 
-
+/* 
+---------------------------------------------
+All Page Background
+--------------------------------------------- 
+*/
+.select-all-content {
+  background-image: url(../images/pagodabali.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #111010;
+}
 
 /* 
 ---------------------------------------------
@@ -340,7 +351,7 @@ Header Style
 */
 
 .background-header {
-  background-color: #fff !important;
+  background-color: #373636 !important;
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
@@ -371,7 +382,7 @@ Header Style
   min-height: 80px;
   background: transparent;
   display: flex;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 15px 30px;
   border-radius: 50px;
 }
@@ -728,13 +739,13 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  /* background-image: url(../images/banner-bg.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: cover; */
   padding-top: 290px;
   padding-bottom: 240px;
-  background-color: #2a2a2a;
+  /* background-color: #2a2a2a; */
 }
 
 .main-banner h6 {
@@ -813,7 +824,7 @@ Categories & Collections Style
 */
 
 .categories-collections {
-  background-image: url(../images/dark-bg.jpg);
+  /* background-image: url(../images/dark-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1088,7 +1099,7 @@ Currently Market Style
 */
 
 .currently-market {
-  background-image: url(../images/dark-bg.jpg);
+  /* background-image: url(../images/dark-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1261,13 +1272,13 @@ Page Heading Style
 }
 
 .page-heading {
-  background-image: url(../images/heading-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  /* background-image: url(../images/heading-bg.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: cover; */
   padding-top: 250px;
   text-align: center;
-  background-color: #2a2a2a;
+  /* background-color: #2a2a2a; */
 }
 
 .page-heading h6 {
@@ -1346,7 +1357,7 @@ Explore Style
   background-color: rgba(40, 43, 47, 0.9);
   opacity: 0;
   visibility: hidden;
-  transition: all .5s;
+  transition: all 1.5s;
 }
 
 .featured-explore .item .hover-effect .content h4 {
@@ -1416,7 +1427,7 @@ Explore Style
 }
 
 .discover-items {
-  background-image: url(../images/dark-bg.jpg);
+  /* background-image: url(../images/dark-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1621,7 +1632,7 @@ Details Page Style
 */
 
 .item-details-page {
-  background-image: url(../images/dark-bg.jpg);
+  /* background-image: url(../images/dark-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1855,7 +1866,7 @@ Author Page Style
 */
 
 .author-page {
-  background-image: url(../images/dark-bg.jpg);
+  /* background-image: url(../images/dark-bg.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

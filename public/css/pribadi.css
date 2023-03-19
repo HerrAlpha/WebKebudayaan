@@ -1,0 +1,12 @@
+.footer-element {
+    /* footer background become transparent  */
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.white-link {
+    color: #fff !important;
+}
+
+.dark-link {
+    color: #0e0d0d !important;
+}
