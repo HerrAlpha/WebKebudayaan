@@ -1,0 +1,528 @@
+
+
+/* nav */
+/* .home{
+    width: 100%;
+    height: 100vh;
+     position: relative;
+     padding: 0%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+} */
+/* 
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* 
+nav .logo{
+    width: 80px;
+}
+*/
+/* 
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+content{
+    text-align: center;
+}
+
+content h1{
+    font-size: 160px;
+    color: white;
+    font-weight: 600;
+} */
+
+/* 
+.nav {
+    position: fixed;
+    margin-top: auto;
+    right: 0;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav li {
+    margin: 0 10px;
+  }
+  
+  .nav-brand {
+    text-align: center;
+  } */
+  
+/* BANNER ATAU BG */
+@import url(https://fonts.googleapis.com/css?family=Nerko+One);
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    animation: fadein 2s;
+
+    
+}
+
+
+
+/* membuat animasi fade in */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* TEXT TYPING */
+
+.wrapper{
+    display: flex;
+    
+}
+
+.wrapper .static-txt{
+    /* color: wheat; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Nerko One';;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.5); */
+    color: transparent;
+    -webkit-text-stroke: 3.84px #333;
+    text-transform: uppercase ;
+    font-size: 300px;
+    font-weight: 600;
+}
+.wrapper .static-txt:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0% ;
+    width: 0%;
+    height: 100%;
+    color: #F0EBCE;
+    -webkit-text-stroke: 1px #333;
+    border-right: 0px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+  0%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
+}
+    /* Untuk layar yang lebih kecil dari 600px */
+    @media screen and (max-width: 600px) {
+        .wrapper .static-txt{
+          font-size: 50px;
+        }
+      }
+      
+      /* Untuk layar antara 600px dan 900px */
+      @media screen and (min-width: 600px) and (max-width: 900px) {
+        .wrapper .static-txt{
+          font-size: 100px;
+        }
+      }
+      
+      /* Untuk layar yang lebih besar dari 900px */
+      @media screen and (min-width: 900px) {
+        .wrapper .static-txt{
+          font-size: 200px;
+        }
+      }
+  
+
+
+/* button */
+
+
+
+.boton {
+    width: 200px;
+    height: 50px;
+    margin: 200px auto;
+    margin-top: 400px; /* mengatur ukuran button atas atau bawah */
+    display: block;
+    position: relative;
+}
+
+.botontext {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.twist {
+    display: block;
+    height: 100%;
+    width: 25%;
+    position: relative;
+    float: left;
+    margin-left: -4px;
+}
+
+.twist:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fed5a9;
+    bottom: 100%;
+    position: absolute;
+    transform-origin: center bottom 0px; 
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 0, -1, -0.003, 
+                        0, 1, 0, 0, 
+                        0, 0, 0, 1);
+    
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+ -o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+    transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.twist:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    height: 100%;
+    background: #9f7f5e;
+    transform-origin: center top 0px;
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 1, 0, 0, 
+                        0, 0, 1, -0.003, 
+                        0, -50, 0, 1);
+    
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+ -o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+    transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.boton:hover .twist:before {
+    background: #fff;
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 1, 0, 0, 
+                        0, 0, 1, 0.003, 
+                        0, 50, 0, 1);
+}
+
+.boton:hover .twist:after {
+    background: #dedae1;
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 0, -1, 0.003, 
+                        0, 1, 0, 0, 
+                        0, 0, 0, 1);
+}
+
+.boton .twist:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.boton .twist:nth-of-type(1):before,
+.boton .twist:nth-of-type(1):after {
+    transition-delay: 0s;
+}
+
+.boton .twist:nth-of-type(2):before,
+.boton .twist:nth-of-type(2):after {
+    transition-delay: 0.1s;
+}
+
+.boton .twist:nth-of-type(3):before,
+.boton .twist:nth-of-type(3):after {
+    transition-delay: 0.2s;
+}
+
+.boton .twist:nth-of-type(4):before,
+.boton .twist:nth-of-type(4):after {
+    transition-delay: 0.3s;
+}
+
+.boton .botontext:nth-of-type(1) {
+    color: #3d3b40;
+    bottom: 100%;
+    transform-origin: center bottom 0px; 
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 0, -1, -0.003, 
+                        0, 1, 0, 0, 
+                        0, 0, 0, 1);
+    
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+ -o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+    transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.boton:hover .botontext:nth-of-type(1) {
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 1, 0, 0, 
+                        0, 0, 1, 0.003, 
+                        0, 50, 0, 1);
+}
+
+.boton .botontext:nth-of-type(2) {
+    color: #fff;
+    top: 100%;
+    transform-origin: center top 0px;
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 1, 0, 0, 
+                        0, 0, 1, -0.003, 
+                        0, -50, 0, 1);
+    
+-webkit-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+-moz-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+ -o-transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); 
+    transition: all 500ms cubic-bezier(0.970, 0.000, 0.395, 0.995); /* custom */
+}
+
+.boton:hover .botontext:nth-of-type(2) {
+    transform: matrix3d(1, 0, 0, 0, 
+                        0, 0, -1, 0.003, 
+                        0, 1, 0, 0, 
+                        0, 0, 0, 1);
+}
+
+  /* POP UP */
+  .container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5px;
+    padding: 20px;
+}
+.container#blur.active .banner{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+.container .content{
+    position: relative;
+    max-width: 800px;
+}
+h2{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+.container .content img{
+    max-width: 100%;
+    display: block;
+}
+.popup{
+    position: relative;
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb (134,43,43);
+    transition: 1s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    text-decoration: none;
+
+      
+
+}
+a:hover{
+    transition: 1s;
+    background: #2b5c59;
+}
+
+#popup{
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+  max-width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  background:linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    .popup {
+      padding: 20px;
+      border-radius: 20px;
+    }
+    
+    .buttons button {
+      margin: 5px;
+      padding: 8px 15px;
+      border-radius: 15px;
+      font-size: 14px;
+    }
+  }
+  .popup.show .boton {
+    display: none;
+  }
+  .popup.show .boton-btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+  }  
+
+#popup h2 {
+    text-align: center;
+  }
+
+  #popup .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #popup button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ff9900;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #popup button:hover {
+    background-color: #ff6600;
+  }
+  
+  #popup button:focus {
+    outline: none;
+  }
+
+#popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c79081;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  ion-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+  #popup .close-btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  .close-btn ion-icon:hover {
+    color: black;
+    background-color: red;
+    transition-duration: 0.3s;
+    border-radius: 20px;
+  }
+  
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('oke.mp4') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* HOME */
+
+
