@@ -175,8 +175,8 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-03.jpg" alt="" style="border-radius: 20px;">
-                    <h4>Genesis Meta Boom</h4>
+                    <img src="{{ url('images/Legenda1.png') }}" alt="" style="border-radius: 20px;">
+                    <h4>Legenda</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
@@ -204,8 +204,8 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-04.jpg" alt="" style="border-radius: 20px;">
-                    <h4>Another Half Ape</h4>
+                    <img src="{{ url('images/CeritaRakyat1.png') }}" alt="" style="border-radius: 20px;">
+                    <h4>Cerita Rakyat</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
@@ -233,8 +233,8 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-03.jpg" alt="" style="border-radius: 20px;">
-                    <h4>Pixel Sand Box</h4>
+                    <img src="{{ url('images/Lagu1.png') }}" alt="" style="border-radius: 20px;">
+                    <h4>Lagu Daerah</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
@@ -262,8 +262,8 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-04.jpg" alt="" style="border-radius: 20px;">
-                    <h4>Another Half Ape</h4>
+                    <img src="{{ url('images/BudayaUnik1.png') }}" alt="" style="border-radius: 20px;">
+                    <h4>Budaya Khas Tiap Daerah</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>

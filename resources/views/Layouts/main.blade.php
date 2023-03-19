@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav">
+                    <nav class="main-nav grey-navbar">
                         <!-- ***** Logo Start ***** -->
                         <a href="index.html" class="logo">
                             <img src="assets/images/logo.png" alt="">
@@ -46,11 +46,9 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="#" class="dark-link">Home</a></li>
+                            <li><a href="/home" class="dark-link">Home</a></li>
                             <li><a href="/pulau" class="dark-link">Explore Islands</a></li>
-                            <li><a href="#" class="dark-link">Item Details</a></li>
-                            <li><a href="#" class="dark-link">Author</a></li>
-                            <li><a href="#" class="dark-link">Create Yours</a></li>
+                            <li><a href="/author" class="dark-link">Author</a></li>
                         </ul>   
                         <a class='menu-trigger'>
                             <span>Menu</span>

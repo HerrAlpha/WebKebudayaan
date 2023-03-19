@@ -168,8 +168,8 @@ body {
 .main-button a {
   font-size: 14px;
   color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
+  background-color: #09410a;
+  border: 1px solid #09410a;
   padding: 12px 30px;
   display: inline-block;
   border-radius: 25px;
@@ -182,14 +182,14 @@ body {
 }
 
 .main-button a:after {
-  width: 78%;
+  /* width: 78%;
   height: 2px;
   background-color: #fff;
   content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .main-button a:hover {
@@ -429,15 +429,15 @@ Header Style
 }
 
 .header-area .main-nav .nav li {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-block;
 }
 
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   text-transform: capitalize;
   color: #2a2a2a;
   -webkit-transition: all 0.3s ease 0s;
@@ -1454,7 +1454,7 @@ Explore Style
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 23px;
-  background-color: transparent;
+  background-color:rgba(13, 56, 19, 0.69);
   padding: 0px 15px;
   font-size: 14px;
   color: #fff;
@@ -1476,8 +1476,8 @@ Explore Style
 .discover-items #search-form button {
   font-size: 14px;
   color: #fff;
-  background-color: #7453fc;
-  border: 1px solid #7453fc;
+  background-color: #213f15;
+  border: 1px solid #213f15;
   height: 46px;
   line-height: 46px;
   text-align: center;
@@ -1487,20 +1487,20 @@ Explore Style
   font-weight: 500;
   text-transform: capitalize;
   letter-spacing: 0.5px;
-  transition: all .3s;
+  transition: all .7s;
   position: relative;
   overflow: hidden;
 }
 
 .discover-items #search-form button:after {
-  width: 78%;
+  /* width: 78%;
   height: 2px;
   background-color: #fff;
   content: '';
   position: absolute;
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .discover-items #search-form button:hover {
