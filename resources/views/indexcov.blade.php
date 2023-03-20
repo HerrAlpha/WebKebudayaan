@@ -58,7 +58,7 @@
     <!-- COVER -->
     <div class="container" id="blur">
       <div class="banner">
-        <video autoplay muted loop src="oke.mp4" type="video/mp4"></video>
+        <video autoplay muted loop src="/img/oke.mp4" type="video/mp4"></video>
       </div>
       <!-- BUTTON COVER -->
       <div class="toplayer">
@@ -75,8 +75,8 @@
           <h2><center>CHOOSE !</center></h2>
           <br />
           <div class="buttons">
-            <button onclick="location.href='{{ route('login') }}'">Login</button> {{-- disambungkan ke index login --}}
-            <button onclick="location.href='{{ route('login') }}'">Sign Up</button>
+            <button onclick="location.href=('jentarian')">Login</button> {{-- disambungkan ke index login --}}
+            <button >Sign Up</button>
             <button onclick="location.replace(#)">Visitor</button> {{-- disambungkan ke index pulau --}}
           </div>
         </div>

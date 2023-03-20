@@ -88,7 +88,7 @@
             <button class="btn transparent" id="sign-up-btn">
               Sign up
             </button>
-            <button class="btn transparent" id="sign-up-btn" onclick="location.href='{{ route('jentara') }}'">Back</button>
+            <button class="btn transparent" id="sign-up-btn" onclick="location.href=('jentara')">Back</button>
             
           </div>
           <img src="img/log.svg" class="image" alt="" />
@@ -103,7 +103,7 @@
             <button class="btn transparent" id="sign-in-btn" >
               Sign in
             </button>
-            <button class="btn transparent" id="sign-in-btn" onclick="location.href='{{ route('jentara') }}'">Back</button>
+            <button class="btn transparent" id="sign-in-btn" onclick="location.href=('jentara')">Back</button>
 
           </div>
           <img src="img/register.svg" class="image" alt="" />
@@ -111,6 +111,6 @@
       </div>
     </div>
 
-    <script src="/js/login.js"></script>
+    <script src="{{ url('js/login.js') }}"></script>
   </body>
 </html>

@@ -30,3 +30,4 @@ Route::get('/jentara', function () {
 Route::get('/jentarian', function () {
     return view('login');
 });
+

@@ -93,7 +93,7 @@
             Kesempatanmu untuk mengungkap misteri dan keajaiban Nusantara yang belum pernah kamu lihat. Siapkah kamu untuk menjelajah dengan kami?
           </p>
 
-          <a onclick="location.href='{{ route('jentara') }}'" class="btn">Explore now</a>
+          <a href="/jentara" class="btn">Explore now</a>
 
         </div>
       </section>
@@ -1026,7 +1026,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="/js/perkenalan.js"></script>
+  {{-- <script src="{{ url("/js/perkenalan.js") }}"></script> --}}
 
   <!-- 
     - ionicon link
