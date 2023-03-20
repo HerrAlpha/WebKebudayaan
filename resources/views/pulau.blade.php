@@ -175,7 +175,7 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/Legenda1.png') }}" alt="" style="border-radius: 20px;">
+                    <img src="{{ url('images/Legenda1.png') }}" alt="" style="border-radius: 20px;>
                     <h4>Legenda</h4>
                   </div>
                   <div class="col-lg-12">
@@ -233,7 +233,7 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/Lagu1.png') }}" alt="" style="border-radius: 20px;">
+                    <img src="{{ url('images/Lagu1.png') }}" alt="" style="border-radius: 20px;>
                     <h4>Lagu Daerah</h4>
                   </div>
                   <div class="col-lg-12">
@@ -262,7 +262,7 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/BudayaUnik1.png') }}" alt="" style="border-radius: 20px;">
+                    <img src="{{ url('images/BudayaUnik1.png') }}" alt="" style="border-radius: 20px;>
                     <h4>Budaya Khas Tiap Daerah</h4>
                   </div>
                   <div class="col-lg-12">
@@ -291,7 +291,7 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-06.jpg" alt="" style="border-radius: 20px;">
+                    <img src="assets/images/discover-06.jpg" alt="" style="border-radius: 20px;>
                     <h4>Invisible NFT Land</h4>
                   </div>
                   <div class="col-lg-12">
@@ -320,7 +320,7 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="assets/images/discover-05.jpg" alt="" style="border-radius: 20px;">
+                    <img src="assets/images/discover-05.jpg" alt="" style="border-radius: 20px;>
                     <h4>Another Half Ape</h4>
                   </div>
                   <div class="col-lg-12">

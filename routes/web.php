@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', [ThreeDController::class, 'home']);
 Route::get('/pulau', [ThreeDController::class, 'pulau']);
+Route::get('/login', [ThreeDController::class, 'login']);
+Route::get('/register', [ThreeDController::class, 'register']);
+
