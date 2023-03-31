@@ -25,7 +25,6 @@
               <input type="password" placeholder="Password" />
             </div>
             <input type="submit" value="Login" class="btn solid" />
-            <input type="submit" value="Login" class="btn solid" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -88,7 +87,7 @@
             <button class="btn transparent" id="sign-up-btn">
               Sign up
             </button>
-            <button class="btn transparent" id="sign-up-btn" onclick="location.href=('jentara')">Back</button>
+            <button class="btn transparent" id="sign-up-btn" onclick="location.href=('home')">Back</button>
             
           </div>
           <img src="img/log.svg" class="image" alt="" />
@@ -103,7 +102,7 @@
             <button class="btn transparent" id="sign-in-btn" >
               Sign in
             </button>
-            <button class="btn transparent" id="sign-in-btn" onclick="location.href=('jentara')">Back</button>
+            <button class="btn transparent" id="sign-in-btn" onclick="location.href=('home')">Back</button>
 
           </div>
           <img src="img/register.svg" class="image" alt="" />

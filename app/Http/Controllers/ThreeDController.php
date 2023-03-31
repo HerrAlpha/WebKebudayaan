@@ -8,7 +8,7 @@ class ThreeDController extends Controller
 {
     public function home()
     {
-        return view('home');
+        return view('indexcov');
     }
     public function pulau()
     {
@@ -18,8 +18,12 @@ class ThreeDController extends Controller
     {
         return view('login');
     }
-    public function register()
+    public function explore()
     {
-        return view('register');
+        return view('explore');
+    }
+    public function opening()
+    {
+        return view('opening');
     }
 }

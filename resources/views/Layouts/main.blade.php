@@ -22,7 +22,7 @@
 </head>
 <body>
     {{-- Preloader --}}
-    {{-- <div id="js-preloader" class="js-preloader">
+    <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
           <span class="dot"></span>
           <div class="dots">
@@ -31,7 +31,7 @@
             <span></span>
           </div>
         </div>
-      </div> --}}
+      </div>
       {{-- EndPreloader --}}
     {{-- Navbar --}}
     <header class="header-area header-sticky">
@@ -47,8 +47,9 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="/home" class="dark-link">Home</a></li>
-                            <li><a href="/pulau" class="dark-link">Explore Islands</a></li>
-                            <li><a href="/author" class="dark-link">Author</a></li>
+                            <li><a href="/pulau" class="dark-link">Overview</a></li>
+                            <li><a href="/explore" class="dark-link">Explore Islands</a></li>
+                            {{-- <li><a href="/author" class="dark-link">Author</a></li> --}}
                         </ul>   
                         <a class='menu-trigger'>
                             <span>Menu</span>

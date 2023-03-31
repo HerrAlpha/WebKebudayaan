@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <!--- custom css and js link -->
   <link rel="stylesheet" href="/css/style.css">
-  <script src="/js/perkenalan.js"></script>
+  <script src="{{ url('js/perkenalan.js') }}"></script>
 </head>
 
 <body id="top">
@@ -93,7 +93,7 @@
             Kesempatanmu untuk mengungkap misteri dan keajaiban Nusantara yang belum pernah kamu lihat. Siapkah kamu untuk menjelajah dengan kami?
           </p>
 
-          <a href="/jentara" class="btn">Explore now</a>
+          <a href="/home" class="btn">Explore now</a>
 
         </div>
       </section>

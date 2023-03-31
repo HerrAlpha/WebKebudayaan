@@ -75,9 +75,9 @@
           <h2><center>CHOOSE !</center></h2>
           <br />
           <div class="buttons">
-            <button onclick="location.href=('jentarian')">Login</button> {{-- disambungkan ke index login --}}
-            <button >Sign Up</button>
-            <button onclick="location.replace(#)">Visitor</button> {{-- disambungkan ke index pulau --}}
+            <button onclick="location.href=('login')">Login</button> {{-- disambungkan ke index login --}}
+            <button onclick="location.href=('login')">Sign Up</button>
+            <button onclick="location.href=('pulau')">Visitor</button> {{-- disambungkan ke index pulau --}}
           </div>
         </div>
 

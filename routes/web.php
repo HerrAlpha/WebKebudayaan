@@ -14,31 +14,14 @@ use App\Http\Controllers\ThreeDController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-Route::get('/opening', function () {
-    return view('opening');
-});
-
-
-Route::get('/jentara', function () {
-    return view('indexcov');
-});
-
-Route::get('/jentarian', function () {
-    return view('login');
-});
-
+Route::get('/', [ThreeDController::class, 'opening']);
 
 Route::get('/home', [ThreeDController::class, 'home']);
+
 Route::get('/pulau', [ThreeDController::class, 'pulau']);
+
 Route::get('/login', [ThreeDController::class, 'login']);
-Route::get('/register', [ThreeDController::class, 'register']);
+
+Route::get('/explore', [ThreeDController::class, 'explore']);
+
+Route::get('/opening', [ThreeDController::class, 'opening']);

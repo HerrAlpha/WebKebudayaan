@@ -95,7 +95,7 @@
                           <h4>Pulau Jawa</h4>
                           <span class="author">
                             <img src="{{ url('images/author.jpg') }}" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
-                            <h6>Pulau Jawa memiliki keunikan yang beragam, di antaranya adalah keragaman budaya, sejarah yang kaya, keindahan alam, serta keberagaman kuliner yang sangat kaya dan lezat. Selain itu, Pulau Jawa juga memiliki tempat-tempat wisata yang populer seperti candi-candi bersejarah, pantai-pantai yang indah, dan gunung-gunung yang menakjubkan. Pulau Jawa juga merupakan pusat industri dan perekonomian nasional serta memiliki populasi terbesar di Indonesia, sehingga sangat beragam dan menawarkan pengalaman yang unik bagi para pengunjung.</h6>
+                            <h6>Pulau Jawa memiliki keunikan yang beragam, di antaranya adalah keragaman budaya, sejarah yang kaya, keindahan alam, serta keberagaman kuliner yang sangat kaya dan lezat. Selain itu, Pulau Jawa juga memiliki tempat-tempat wisata yang populer seperti candi-candi bersejarah, pantai-pantai yang indah, dan gunung-gunung yang menakjubkan.</h6>
                           </span>
                         </div>
                       </div>
@@ -125,49 +125,6 @@
     <div class="discover-items">
         <div class="container">
           <div class="row">
-            <div class="col-lg-5">
-              <div class="section-heading">
-                <div class="line-dec"></div>
-                <h2>Discover Some Of Our <em>Items</em>.</h2>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <form id="search-form" name="gs" method="submit" role="search" action="#">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <fieldset>
-                        <input type="text" name="keyword" class="searchText" placeholder="Type Something..." autocomplete="on" required>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-3">
-                    <fieldset>
-                        <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                            <option selected>All Categories</option>
-                            <option type="checkbox" name="option1" value="Music">Music</option>
-                            <option value="Digital">Digital</option>
-                            <option value="Blockchain">Blockchain</option>
-                            <option value="Virtual">Virtual</option>
-                        </select>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-3">
-                    <fieldset>
-                        <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                            <option selected>Available</option>
-                            <option value="Ending-Soon">Ending Soon</option>
-                            <option value="Coming-Soon">Coming Soon</option>
-                            <option value="Closed">Closed</option>
-                        </select>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-2">                        
-                    <fieldset>
-                        <button class="main-button">Search</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
             <div class="col-lg-3">
               <div class="item">
                 <div class="row">
@@ -175,23 +132,23 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/Legenda1.png') }}" alt="" style="border-radius: 20px;>
-                    <h4>Legenda</h4>
+                    <img src="{{ url('images/Legenda1.png') }}" alt="" style="border-radius: 20px;">
+                    <h4>Tarian Daerah</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
                     <div class="row">
                       <div class="col-6">
-                        <span>Current Bid: <br> <strong>5.15 ETH</strong></span>
+                        <span>Pulau : <br> <strong>Semua Pulau</strong></span>
                       </div>
                       <div class="col-6">
-                        <span>Ends In: <br> <strong>26th Nov</strong></span>
+                        <span>Jumlah : <br> <strong>Sangat Banyak</strong></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="main-button">
-                      <a href="details.html">View Details</a>
+                      <a href="/explore">View Details</a>
                     </div>
                   </div>
                 </div>
@@ -205,22 +162,22 @@
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
                     <img src="{{ url('images/CeritaRakyat1.png') }}" alt="" style="border-radius: 20px;">
-                    <h4>Cerita Rakyat</h4>
+                    <h4>Legenda</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
                     <div class="row">
                       <div class="col-6">
-                        <span>Current Bid: <br> <strong>3.63 ETH</strong></span>
+                        <span>Pulau : <br> <strong>Hampir Semua Pulau</strong></span>
                       </div>
                       <div class="col-6">
-                        <span>Ends In: <br> <strong>24th Nov</strong></span>
+                        <span>Jumlah : <br> <strong>Sangat Banyak</strong></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="main-button">
-                      <a href="details.html">View Details</a>
+                      <a href="/explore">View Details</a>
                     </div>
                   </div>
                 </div>
@@ -233,23 +190,25 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/Lagu1.png') }}" alt="" style="border-radius: 20px;>
-                    <h4>Lagu Daerah</h4>
+                    <img src="{{ url('images/Lagu1.png') }}" alt="" style="border-radius: 20px;">
+                    <span>
+                      <h4>Lagu Daerah</h4>
+                    </span>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
                     <div class="row">
                       <div class="col-6">
-                        <span>Current Bid: <br> <strong>4.68 ETH</strong></span>
+                        <span>Pulau : <br> <strong>Semua Pulau</strong></span>
                       </div>
                       <div class="col-6">
-                        <span>Ends In: <br> <strong>28th Nov</strong></span>
+                        <span>Jumlah : <br> <strong>Sangat Banyak</strong></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="main-button">
-                      <a href="details.html">View Details</a>
+                      <a href="/explore">View Details</a>
                     </div>
                   </div>
                 </div>
@@ -262,81 +221,25 @@
                     <span class="author">
                       <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
                     </span>
-                    <img src="{{ url('images/BudayaUnik1.png') }}" alt="" style="border-radius: 20px;>
-                    <h4>Budaya Khas Tiap Daerah</h4>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="line-dec"></div>
-                    <div class="row">
-                      <div class="col-6">
-                        <span>Current Bid: <br> <strong>2.03 ETH</strong></span>
-                      </div>
-                      <div class="col-6">
-                        <span>Ends In: <br> <strong>25th Nov</strong></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="details.html">View Details</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <span class="author">
-                      <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
+                    <img src="{{ url('images/BudayaUnik1.png') }}" alt="" style="border-radius: 20px;">
+                    <span>
+                      <h4>Budaya Khas Tiap Daerah</h4>
                     </span>
-                    <img src="assets/images/discover-06.jpg" alt="" style="border-radius: 20px;>
-                    <h4>Invisible NFT Land</h4>
                   </div>
                   <div class="col-lg-12">
                     <div class="line-dec"></div>
                     <div class="row">
                       <div class="col-6">
-                        <span>Current Bid: <br> <strong>2.03 ETH</strong></span>
+                        <span>Pulau : <br> <strong>Semua Pulau</strong></span>
                       </div>
                       <div class="col-6">
-                        <span>Ends In: <br> <strong>25th Nov</strong></span>
+                        <span>Jumlah : <br> <strong>Sangat Banyak</strong></span>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-12">
                     <div class="main-button">
-                      <a href="details.html">View Details</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="item">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <span class="author">
-                      <img src="assets/images/author.jpg" alt="" style="max-width: 50px; max-height: 50px; border-radius: 50%;">
-                    </span>
-                    <img src="assets/images/discover-05.jpg" alt="" style="border-radius: 20px;>
-                    <h4>Another Half Ape</h4>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="line-dec"></div>
-                    <div class="row">
-                      <div class="col-6">
-                        <span>Current Bid: <br> <strong>2.64 ETH</strong></span>
-                      </div>
-                      <div class="col-6">
-                        <span>Ends In: <br> <strong>25th Nov</strong></span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="details.html">View Details</a>
+                      <a href="/explore">View Details</a>
                     </div>
                   </div>
                 </div>

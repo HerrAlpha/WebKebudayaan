@@ -333,19 +333,6 @@ Pre-loader Style
 
 /* 
 ---------------------------------------------
-All Page Background
---------------------------------------------- 
-*/
-.select-all-content {
-  background-image: url(../images/pagodabali.jpg); 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-color: #111010;
-}
-
-/* 
----------------------------------------------
 Header Style
 --------------------------------------------- 
 */
@@ -1361,7 +1348,7 @@ Explore Style
 }
 
 .featured-explore .item .hover-effect .content h4 {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 25px;
 }
 
@@ -1558,6 +1545,7 @@ Explore Style
   padding: 30px;
   border-radius: 20px;
   position: relative;
+  margin-top: 52px;
   margin-bottom: 52px;
 }
 
