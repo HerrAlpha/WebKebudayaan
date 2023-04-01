@@ -4,7 +4,30 @@
 }
 body {
 	background: #f1fbff;
+	display: flex;
+	flex-direction: column; /* Make sure body fills available height and stays at least 100% high.*/
+
 }
+.page-content {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+  }
+  
+.main-content {
+	min-height: 100vh;
+	margin-bottom: 100px;
+	flex: 1;
+  }
+  
+.page-footer {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+  }
+ul.navbar-nav li {
+	padding-left: 2em;
+  }
 .section-padding {
 	padding: 100px 0;
 }
