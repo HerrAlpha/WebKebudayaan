@@ -15,7 +15,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <img src="{{ asset('images/project-1-img/team-1.jpg') }}" alt="Placeholder image" class="img-fluid rounded-circle">
-                            <h3 class="card-title py-2">Jack Wilson</h3>
+                            <h3 class="card-title py-2">Adelia Khansa R</h3>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
                                 nostrum illo tempora esse quibusdam.</p>
                             <p class="socials">
@@ -32,7 +32,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <img src="{{ asset('images/project-1-img/team-2.jpg') }}" alt="Placeholder image" class="img-fluid rounded-circle">
-                            <h3 class="card-title py-2">Jack Wilson</h3>
+                            <h3 class="card-title py-2">Alfaj Syahrizal</h3>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
                                 nostrum illo tempora esse quibusdam.</p>
                             <p class="socials">
@@ -49,7 +49,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <img src="{{ asset('images/project-1-img/team-3.jpg') }}" alt="Placeholder image" class="img-fluid rounded-circle">
-                            <h3 class="card-title py-2">Jack Wilson</h3>
+                            <h3 class="card-title py-2">Avan Fabian</h3>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
                                 nostrum illo tempora esse quibusdam.</p>
                             <p class="socials">
@@ -66,7 +66,7 @@
                     <div class="card text-center">
                         <div class="card-body">
                             <img src="{{ asset('images/project-1-img/team-4.jpg') }}" alt="Placeholder image" class="img-fluid rounded-circle">
-                            <h3 class="card-title py-2">Jack Wilson</h3>
+                            <h3 class="card-title py-2">Dita Anggraini</h3>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam
                                 nostrum illo tempora esse quibusdam.</p>
                             <p class="socials">

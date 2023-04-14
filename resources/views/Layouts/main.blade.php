@@ -44,7 +44,7 @@
         @if (!isset($isCover))
             {{-- Jika bukan halaman Cover maka jangan load kode dibawah --}}
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <div class="container">
+                <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="#"><span class="text-danger">Jelajah</span>Nusantara</a> <button
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                         class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
@@ -61,9 +61,21 @@
                                 <a class="nav-link" href="/explore-budaya">Ayoo Jelajahi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/tim-kita">Team Detail</a>
+                                <a class="nav-link" href="/tim-kita"><i class="fa fa-user-o"></i>Team Detail</a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="search" class="form-control ps-2 pe-5" placeholder="Cari...">
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form method="GET" action="">
+                                <button type="submit" class="btn btn-danger"><i class="fa fa-search me-2"></i>Cari</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>

@@ -22,11 +22,13 @@
                 </div>
                 <h2 class="text-center">CHOOSE
                     <br />
-                    <div class="buttons">
-                        <button onclick="location.href=('login')">Login</button> {{-- disambungkan ke index login --}}
-                        <button onclick="location.href=('login')">Sign Up</button>
-                        <button onclick="location.href=('pulau')">Visitor</button> {{-- disambungkan ke index pulau --}}
-                    </div>
+                    <form action="{{ url('login-get') }}" method="GET">
+                        <div class="buttons">
+                            <button type="submit">Login</button> {{-- disambungkan ke index login --}}
+                            <button type="submit">Sign Up</button>
+                            <button onclick="location.href=('pulau')">Visitor</button> {{-- disambungkan ke index pulau --}}
+                        </div>
+                    </form>
             </div>
         </div>
       </div>
