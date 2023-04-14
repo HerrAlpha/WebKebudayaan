@@ -33,7 +33,3 @@ Route::view('/opening', 'opening');
 Route::view('/tim-kita', 'jentTeam');
 
 // Controller Login route
-Route::get('/login-get', [UserController::class, 'showLoginForm'])->name('login-get');
-// Route::post('/login-post', [UserController::class, 'login'])->name('login-post');
-// Route::post('/register', [UserController::class, 'register'])->name('register');
-// Route::post('/logout', [UserController::class, 'logout'])->name('logout');
