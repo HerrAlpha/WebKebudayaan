@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="{{ url('css/login.css') }}" />
-    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+    {{-- bootstrap in bootstrap/css/ --}}
+    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}" />
+    <title>Welcome to Our World</title>
   </head>
   <body>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
-          <form action="{{ route('') }}" method="POST" class="sign-in-form">
+          @csrf
+          <form action="{{ route('login.post') }}" method="POST" class="sign-in-form">
+            @csrf
             <h2 class="title">Sign in</h2>
             <div class="input-field">
               <i class="fa fa-user" aria-hidden="true"></i>
-              {{-- Beri name sesuai jenis input agar dikenal Controller register/login --}}
+              {{-- Beri name sesuai jenis input agar dikenal Controller re  gister/login --}}
               <input type="text" name="username" placeholder="Username" />
             </div>
+            @error('username')
+            <div class="alert alert-danger">{{ $message }}</div>
+            @enderror
             <div class="input-field">
               <i class="fas fa-lock"></i>
               {{-- Beri name sesuai jenis input agar dikenal Controller register/login --}}
               <input type="password" name="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" id="btn" />
             <p class="social-text">Or Sign in with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -48,7 +51,7 @@
             <div class="input-field">
               <i class="fas fa-user"></i>
               {{-- Beri name sesuai jenis input agar dikenal Controller register/login --}}
-              <input type="text" name="username" placeholder="Username" />
+              <input type="text" name="username" value="{{ old('username') }}" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
@@ -76,7 +79,6 @@
               <a href="#" class="social-icon">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href=""></a>
             </div>
           </form>
         </div>
@@ -85,7 +87,7 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>New here ?</h3>  
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
               ex ratione. Aliquid!
@@ -116,6 +118,10 @@
       </div>
     </div>
 
-    <script src="{{ url('js/login.js') }}"></script>
+    <script defer src="{{ url('js/login.js') }}"></script>
+    <script defer
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>

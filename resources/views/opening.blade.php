@@ -93,7 +93,7 @@
             Kesempatanmu untuk mengungkap misteri dan keajaiban Nusantara yang belum pernah kamu lihat. Siapkah kamu untuk menjelajah dengan kami?
           </p>
 
-          <a href="/home" class="btn">Explore now</a>
+          <a href="{{ route('home') }}" class="btn">Explore now</a>
 
         </div>
       </section>

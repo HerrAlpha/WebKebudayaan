@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\IslandController;
 use App\Http\Controllers\AdviceController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,19 +16,27 @@ use App\Http\Controllers\AdviceController;
 |
 */
 
-// Optimasi Route
-Route::view('/', 'opening');
+// Begining Route
+Route::get('/', function () {
+    return view('opening');
+});
 
-Route::view('/home', 'indexcov');
+// Konten Route
+Route::get('/home', function () {
+    return view('indexcov');
+})->name('home');
 
-Route::view('/pulau', 'pulau');
+Route::get('/home/pulau', function () {
+    return view('pulau');
+})->name('home.pulau');
 
-Route::view('/login', 'login');
+// Login Route
+Route::controller(AuthController::class)->group(function () {
+    Route::get('/login', 'login')->name('login');
+    Route::post('/login', 'loginPost')->name('login.post');
+    Route::get('/logout', 'logout')->name('logout'); 
+});
 
-Route::view('/explore-budaya', 'explore');
-
-Route::view('/opening', 'opening');
-
-Route::view('/tim-kita', 'jentTeam');
-
-// Controller Login route
+// Saran Route
+Route::get('/saran', [AdviceController::class, 'index'])->name('saran.index');
+Route::post('/saran', [AdviceController::class, 'store'])->name('saran.store');

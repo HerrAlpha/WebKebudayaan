@@ -23,22 +23,19 @@
         <h2 class="text-center">CHOOSE
           <br />
           <div class="row mt-3">
-            <form action="/login" method="GET">
               <div class="col-12">
-                <button class="btn" type="submit">Login</button>
+                <button type="button"><a class="text-custom" href="{{ route('login') }}">Sign Up</a></button>
               </div>
-            </form>
           </div>
-          <div class="row ">
-            <form action="/login">
+          <div class="row mt-4">
               <div class="col-12">
-                <button class="btn" type="submit">Sign Up</button>
+                {{-- <button type="button"><a class="text-custom" href="{{ route('login') }}">Sign In</a></button> --}}
+                <button type="button"><a class="text-custom" href="{{ route('home.pulau') }}">Sign In</a></button>
               </div>
-            </form>
           </div>
-          <div class="row 3">
+          <div class="row mt-4">
             <div class="col-12">
-              <button type="button"><a class="text-custom" href="/pulau">Visitor</a></button>
+              <button type="button"><a class="text-custom" href="{{ route('home.pulau') }}">Visitor</a></button>
             </div>
           </div>
       </div>
@@ -58,6 +55,6 @@
   <script defer
      type="module"
      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-     ></script>
+    ></script>
   <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 @endsection

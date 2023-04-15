@@ -21,13 +21,13 @@ input {
   }
   
 
-.container {
+/* .container {
   position: relative;
   width: 100%;
   background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
-}
+} */
 
 .forms-container {
   position: absolute;
@@ -142,7 +142,7 @@ form.sign-in-form {
   border-color: #F3E0B5;
 }
 
-.btn {
+#btn {
   width: 150px;
   background-color: #F3E0B5;
   border: none;
@@ -157,7 +157,7 @@ form.sign-in-form {
   transition: 0.5s;
 }
 
-.btn:hover {
+#btn:hover {
   background-color: #F3E0B5;
 }
 .panels-container {
