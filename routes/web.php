@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Requests;
+use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdviceController;
 use App\Http\Controllers\AuthController;
@@ -31,6 +31,10 @@ Route::get('/home/pulau', function () {
     return view('pulau');
 })->name('home.pulau');
 
+Route::get('/masuk', function () {
+    return view('login.login');
+})->name('masuk'); // route view login
+
 // Login Route
 // Route::controller(AuthController::class)->group(function () {
 //     Route::get('/login', 'login')->name('login');
@@ -39,7 +43,8 @@ Route::get('/home/pulau', function () {
 // });
 
 // sign up & log in validator
-Route::post('/login', [UserController::class, 'prosesUserValidator']);
+Route::post('/login', [UserController::class, 'prosesUserValidator'])->name('login'); 
+// beri name agar bisa diakses di controller
 
 // Saran Route
 Route::get('/saran', [AdviceController::class, 'index'])->name('saran.index');

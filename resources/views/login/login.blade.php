@@ -13,7 +13,8 @@
       <div class="forms-container">
         <div class="signin-signup">
           @csrf
-          <form action="{{ url('/login') }}" method="POST" class="sign-in-form">
+          <form action="{{route('login')}}" method="POST" class="sign-in-form"> 
+            {{-- pakai {{ route('login') }} --}}
             @csrf
             <h2 class="title">Sign in</h2>
 

@@ -1,36 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Requests;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function prosesUserValidator(Request $request){
-        $validator = validator::make($request->all(),[
-            'username' => 'required|min:6|max:9',
-            'password' => [
-                'required',
-                'regex:/^[a-zA-Z0-9]*$/',
-                'min:6',
-                'max:10'
-            ],
-            'email' => 'required|email'
-        ],
-        [
-            'required' => 'Required fields must be filled in.',
-            'size' => ':atribute harus berukuran :size karakter.',
-            'max' => ':atribute maximal berisi :max karakter',
-            'min' => ':atribute minimal berisi :min karakter',
-            'email' => ':harus diisi dengaan alamat email yang valid'
-        ]);
+    public function prosesUserValidator(Request $request){ // ini bisa dikembangkan lagi
+        $request->validate([
+            'username' => 'required|string|max:255',
+            'password' => 'required|min:8',
+        ]); // sesuaikan inputan di view dengan di controller
 
-        if($validator->fails()){
-            return redirect('/login')->withErrors($validator)->withInput();
-        }else{
-            echo $request->username; echo "<br>";
-            echo $request->password; echo "<br>";
-            echo $request->email; echo "br";
-        }
+        $message = [
+            'required' => 'Form ini harus diisi.',
+            'min' => 'Karakter minimal :min karakter.',
+            'max' => 'Karakter maksimal :max karakter.',
+        ];
+
+        $username = $request->input('username');
+        $password = $request->input('password');
+
+        echo $username;
+        echo $password;
+        
+        
     }
 }
