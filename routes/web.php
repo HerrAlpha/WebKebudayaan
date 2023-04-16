@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Requests;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdviceController;
 use App\Http\Controllers\AuthController;
@@ -31,11 +32,14 @@ Route::get('/home/pulau', function () {
 })->name('home.pulau');
 
 // Login Route
-Route::controller(AuthController::class)->group(function () {
-    Route::get('/login', 'login')->name('login');
-    Route::post('/login', 'loginPost')->name('login.post');
-    Route::get('/logout', 'logout')->name('logout'); 
-});
+// Route::controller(AuthController::class)->group(function () {
+//     Route::get('/login', 'login')->name('login');
+//     Route::post('/login', 'loginPost')->name('login.post');
+//     Route::get('/logout', 'logout')->name('logout'); 
+// });
+
+// sign up & log in validator
+Route::post('/login', [UserController::class, 'prosesUserValidator']);
 
 // Saran Route
 Route::get('/saran', [AdviceController::class, 'index'])->name('saran.index');

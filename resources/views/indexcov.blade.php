@@ -11,6 +11,12 @@
       <div class="banner">
         <video autoplay muted loop src="{{ url('img/oke.mp4') }}" type="video/mp4"></video>
       </div>
+
+{{-- MP3 --}}
+      <audio src="">
+        
+      </audio>
+
       <!-- BUTTON COVER -->
       <div class="toplayer">
         <a class="boton" onclick="toggle()">Start Now !</a>
@@ -20,7 +26,7 @@
         <div class="close close-btn" onclick="toggle()">
           <ion-icon name="close-outline"></ion-icon>
         </div>
-        <h2 class="text-center">CHOOSE
+        <h2 class="text-center">CHOOSE YOU
           <br />
           <div class="row mt-3">
               <div class="col-12">
